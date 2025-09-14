@@ -34,3 +34,5 @@ Clone repo:
 ```bash
 git clone https://github.com/nhut-nam/FacialEmoteRecognition.git
 cd FacialEmoteRecognition
+
+python mytrain.py --dataset-path ./FER2013 --output-dir ./checkpoints/emoneXt
