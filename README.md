@@ -1,11 +1,11 @@
-# FacialEmoteRecognition: EmoNeXt & ConvNeXt with Differential Deep Metric Learning
+# FacialEmoteRecognition: EmoNeXt & ConvNeXt with Differential Deep Mutual Learning
 
 ## 📌 Giới thiệu
 Đây là repo cho bài toán **nhận diện cảm xúc khuôn mặt** trên dataset **FER-2013**.  
 Chúng tôi triển khai và so sánh hai hướng tiếp cận chính:
 
 - **EmoNeXt**: Mô hình cải tiến dựa trên ConvNeXt, được tối ưu hoá cho bài toán phân loại cảm xúc.  
-- **ConvNeXt with Differential Deep Metric Learning**: Kết hợp ConvNeXt backbone với **Differential Deep Metric Learning** để tăng khả năng phân tách giữa các lớp cảm xúc.
+- **ConvNeXt with Differential Deep Mutual Learning**: Kết hợp ConvNeXt backbone với **Differential Deep Metric Learning** để tăng khả năng phân tách giữa các lớp cảm xúc.
 
 ---
 
@@ -15,9 +15,9 @@ Chúng tôi triển khai và so sánh hai hướng tiếp cận chính:
 - Cải tiến với các attention module (ví dụ: CBAM, SMAL) để tăng khả năng trích xuất đặc trưng khuôn mặt.  
 - Hướng tới việc đạt **độ chính xác cao hơn ConvNeXt gốc** trên FER-2013.  
 
-### 2. ConvNeXt + Differential Deep Metric Learning
+### 2. ConvNeXt + Differential Deep Mutual Learning
 - Sử dụng ConvNeXt làm backbone feature extractor.  
-- Thêm **Differential Deep Metric Learning loss** nhằm cải thiện khoảng cách giữa embedding vector của các lớp.  
+- Thêm **Differential Deep Mutual Learning loss** nhằm cải thiện khoảng cách giữa embedding vector của các lớp.  
 - Giúp mô hình học representation tốt hơn, tăng khả năng phân loại các cảm xúc gần nhau.  
 
 ---
